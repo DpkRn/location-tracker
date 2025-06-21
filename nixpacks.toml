@@ -1,5 +1,10 @@
 [variables]
 GO_VERSION = "1.22"
+NODE_VERSION = "20"
+
+[languages]
+go = true
+node = "20"
 
 [phases.build]
 cmds = [
