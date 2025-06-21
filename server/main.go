@@ -86,8 +86,8 @@ func broadcastLocations() {
 func main() {
 	http.HandleFunc("/ws", handleWS)
 
-	// Serve static files from the correct path for local dev and deployment
-	fs := http.FileServer(http.Dir("../frontend/dist"))
+	// Serve static files from the correct path for Railway (project root)
+	fs := http.FileServer(http.Dir("frontend/dist"))
 	http.Handle("/", fs)
 
 	fmt.Println("Server running on :8080")
