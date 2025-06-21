@@ -1,3 +1,6 @@
+[variables]
+GO_VERSION = "1.22"
+
 [phases.build]
 cmds = [
   "cd frontend && npm install && npm run build",
